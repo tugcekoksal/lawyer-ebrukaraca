@@ -13,7 +13,7 @@ export default function Home() {
       </div>
       <div className="flex justify-center items-center"> </div>
 
-      <h1 className=" text-xl sm:text-3xl leading-loose ">
+      <h1 className=" text-xl sm:text-3xl leading-loose max-w-[800px] ">
         Sitemiz yapım aşamasındadır. Tüm sorularınız için{" "}
         <span className=" underline ">
           <a
