@@ -42,10 +42,6 @@ export default function Home() {
         </div>
       ) : (
         <div className="relative">
-          {/* <div className={` ${scrolling ? "scrolled" : "scroll-logo"}`}>
-            <img src="logo2.png" className="w-[530px] h-[230px] opacity-90" />
-          </div> */}
-
           <Hero />
 
           <About />

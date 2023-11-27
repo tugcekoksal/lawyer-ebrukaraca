@@ -44,19 +44,28 @@ body {
 
 .scroll-logo {
   position: fixed;
-  top: 180px;
-  left: 150px;
+  top: 190px;
+  left: 100px;
   transition: top 1.5s ease, left 1.5s ease, transform 1.5s ease;
   z-index: 98;
 }
 
 .scrolled {
   position: fixed;
-  top: -80px;
-  left: -80px;
+  top: -95px;
+  left: -180px;
   z-index: 98;
   transition: top 1.5s ease, left 1.5s ease, transform 1.5s ease;
-  transform: scale(0.35);
+  transform: scale(0.3);
+}
+@media (max-width: 640px) {
+  .scroll-logo,
+  .scrolled {
+    position: static;
+    transform: none;
+    top: auto;
+    left: auto;
+  }
 }
 .footer {
   position: relative;

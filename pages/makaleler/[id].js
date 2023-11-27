@@ -24,11 +24,8 @@ const ArticleDetail = () => {
             style={{ backgroundImage: `url('${article.imageUrl}')` }}
           >
             <div className="absolute inset-0 bg-black opacity-50"></div>
-            {/* <h1 className="absolute left-16 bottom-10 text-white font-bold text-3xl z-10">
-              {article.title}
-            </h1> */}
           </div>
-          <div className="container mx-[7rem] px-[10rem] py-10">
+          <div className="container mx-0 md:mx-[7rem] px-6 md:px-[10rem] py-10">
             <header className="mb-8">
               <h1 className="text-4xl font-bold py-4">{article.title}</h1>
               <p className="text-md text-gray-500">{article.summary}</p>

@@ -65,7 +65,7 @@ const Navbar = () => {
           src={`${
             router.pathname === "/" || isScrolled ? "logo2.png" : "logo4.png"
           }`}
-          className="w-[530px] h-[230px] opacity-90"
+          className="sm:w-[685px] sm:h-[268px] opacity-90 "
         />
       </div>
       <div className="container mx-auto py-2 flex justify-center items-center">
@@ -84,12 +84,12 @@ const Navbar = () => {
 
       <div
         onClick={handleMenu}
-        className={`fixed top-[1.5rem] left-10 block sm:hidden z-[100] border border-solid p-1 rounded-xl`}
+        className={`fixed top-[6rem] left-20 block sm:hidden z-[100] border border-opacity-20 border-black p-1 rounded-xl`}
       >
         {isMenuOpen ? (
-          <AiOutlineClose size={24} className="text-gray-600" />
+          <AiOutlineClose size={10} className="text-gray-600" />
         ) : (
-          <AiOutlineMenu size={24} className="text-gray-600" />
+          <AiOutlineMenu size={10} className="text-gray-600" />
         )}
       </div>
 
