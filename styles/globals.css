@@ -2,26 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  scroll-behavior: smooth;
+  font-family: "EB Garamond", serif;
+  transition: all 0.5s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.hero-animation {
+  opacity: 0;
+  animation: scaleUp 8s forwards, fadeIn 1s ease forwards;
+}
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.custom-bg {
+  background-image: url("/quote.jpg");
+  position: relative; /* Required for absolute positioning of the pseudo-element */
+}
+
+.custom-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  z-index: 1;
+}
+
+.scroll-logo {
+  position: fixed;
+  top: 180px;
+  left: 150px;
+  transition: top 1.5s ease, left 1.5s ease, transform 1.5s ease;
+  z-index: 98;
+}
+
+.scrolled {
+  position: fixed;
+  top: -80px;
+  left: -80px;
+  z-index: 98;
+  transition: top 1.5s ease, left 1.5s ease, transform 1.5s ease;
+  transform: scale(0.35);
+}
+.footer {
+  position: relative;
+  background-image: url("/column.jpg");
+  background-size: cover;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
 }
