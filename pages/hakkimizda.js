@@ -6,7 +6,7 @@ const hakkimizda = () => {
   return (
     <section id="hakkimizda" className=" ">
       <div
-        className="relative w-full h-[400px]"
+        className="relative w-full h-[400px] bg-no-repeat "
         style={{
           backgroundImage: 'url("/hakkinda.jpg")',
           backgroundAttachment: "fixed",
