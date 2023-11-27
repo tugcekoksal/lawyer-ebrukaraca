@@ -50,7 +50,7 @@ const Iletisim = () => {
               <div className="mb-6">
                 <input
                   type="text"
-                  placeholder="Ad - Soyad"
+                  placeholder="Ad Soyad  "
                   className="form-input mt-1 block w-full border-0 border-b-2 border-gold-500 leading-relaxed"
                 />
               </div>
