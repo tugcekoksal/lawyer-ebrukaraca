@@ -6,12 +6,9 @@ const uzmanlik = () => {
   return (
     <div>
       <div
-        className="relative w-full h-[400px]"
+        className="relative w-full h-[400px] bg-cover bg-center"
         style={{
           backgroundImage: 'url("/uzmanlik.jpg")',
-          backgroundAttachment: "fixed",
-          backgroundSize: "cover",
-          backgroundPosition: "center -180px",
         }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>

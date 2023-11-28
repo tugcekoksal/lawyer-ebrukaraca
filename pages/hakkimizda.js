@@ -6,12 +6,9 @@ const hakkimizda = () => {
   return (
     <section id="hakkimizda" className=" ">
       <div
-        className="relative w-full h-[400px] bg-no-repeat "
+        className="relative w-full h-[400px] bg-cover bg-center "
         style={{
           backgroundImage: 'url("/hakkinda.jpg")',
-          backgroundAttachment: "fixed",
-          backgroundSize: "100% 100%",
-          backgroundPosition: "center -130px",
         }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>

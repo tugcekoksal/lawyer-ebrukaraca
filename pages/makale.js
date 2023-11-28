@@ -6,12 +6,12 @@ const makale = () => {
   return (
     <div>
       <div
-        className="relative w-full h-[400px]"
+        className="relative w-full h-[400px] bg-center bg-cover"
         style={{
           backgroundImage: 'url("/article.jpg")',
-          backgroundAttachment: "fixed",
-          backgroundSize: "100% 100%",
-          backgroundPosition: "center -80px",
+          // backgroundAttachment: "fixed",
+          // backgroundSize: "100% 100%",
+          // backgroundPosition: "center -80px",
         }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
