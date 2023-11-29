@@ -8,7 +8,7 @@ const About = () => {
       <section
         id="about"
         style={{ backgroundImage: "url('/about-background.jpg')" }}
-        className="relative grid grid-cols-1 sm:grid-cols-2  justify-center bg-cover items-center m-6 md:m-[7rem]  shadow-2xl bg-center h-auto md:h-screen px-2 sm:px-[5rem] overflow-hidden "
+        className="relative grid grid-cols-1 lg:grid-cols-2  justify-center bg-cover items-center m-6 md:m-[7rem]  shadow-2xl bg-center h-auto md:h-screen px-2 sm:px-[5rem] overflow-hidden "
       >
         <div className="absolute inset-0 bg-white opacity-70"></div>
 
@@ -32,7 +32,7 @@ const About = () => {
             transition={{ duration: 1.3, delay: 0.25 }}
             src="/profil.png"
             alt=""
-            className=" shadow-lg z-[9] w-2/4 sm:w-auto "
+            className=" shadow-lg z-[9] w-2/4 sm:w-auto mb-6 lg:mb-0"
             style={{
               height: "auto",
               maxWidth: "265px",

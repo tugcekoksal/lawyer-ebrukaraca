@@ -90,12 +90,12 @@ const Navbar = () => {
 
       <div
         onClick={handleMenu}
-        className={`fixed top-[6rem] left-20 block sm:hidden z-[100] border border-opacity-20 border-black p-1 rounded-xl`}
+        className={`fixed top-[2rem] scale-50 sm:scale-100 right-40 block lg:hidden z-[100] border border-opacity-20 border-black p-1 rounded-xl`}
       >
         {isMenuOpen ? (
-          <AiOutlineClose size={10} className="text-gray-600" />
+          <AiOutlineClose size={20} className="text-gray-600" />
         ) : (
-          <AiOutlineMenu size={10} className="text-gray-600" />
+          <AiOutlineMenu size={20} className="text-gray-600" />
         )}
       </div>
 

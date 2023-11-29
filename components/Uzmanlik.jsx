@@ -17,7 +17,7 @@ const Uzmanlik = () => {
   return (
     <section
       id="uzmanlik"
-      className="grid grid-cols-1 sm:grid-cols-3 gap-10 mx-6 md:mx-[7rem] my-[100px] h-full "
+      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-6 md:mx-[7rem] my-[100px] h-full "
     >
       {uzmanlik.map((uzmanlik, index) => (
         <UzmanlikKart
