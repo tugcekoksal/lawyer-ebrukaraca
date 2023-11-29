@@ -15,7 +15,7 @@ const makale = () => {
         }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        <h1 className="absolute left-[7rem] bottom-10 text-white font-bold text-3xl z-[9] ">
+        <h1 className="absolute left-6 md:left-[7rem] bottom-10 text-white font-bold text-3xl z-[9] ">
           <Translation textKey="makale" />
         </h1>
       </div>

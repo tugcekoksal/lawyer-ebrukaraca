@@ -85,9 +85,10 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="flex items-center justify-center mr-[10px]">
+        <LanguageSwitcher color={color} />
         <div
           onClick={handleMenu}
-          className={` lg:hidden mr-2 z-[100] border border-opacity-20 border-black p-1 rounded-xl`}
+          className={` lg:hidden ml-2 z-[100] border border-opacity-20 border-black p-1 rounded-xl`}
         >
           {isMenuOpen ? (
             <AiOutlineClose size={20} className="text-gray-600" />
@@ -95,7 +96,6 @@ const Navbar = () => {
             <AiOutlineMenu size={20} className="text-gray-600" />
           )}
         </div>{" "}
-        <LanguageSwitcher color={color} />
       </div>
 
       <div
