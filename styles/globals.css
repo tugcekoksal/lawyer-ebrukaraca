@@ -8,9 +8,15 @@ body {
   transition: all 0.5s ease;
 }
 
-.hero-animation {
+.hero-image {
+  background-image: url("/hero3.jpg");
   opacity: 0;
   animation: scaleUp 8s forwards, fadeIn 1s ease forwards;
+}
+@media (max-width: 800px) {
+  .hero-image {
+    background-image: url("/hero.jpg"); /* Replace with your mobile hero image */
+  }
 }
 @keyframes scaleUp {
   0% {

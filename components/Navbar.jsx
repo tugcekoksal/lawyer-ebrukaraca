@@ -60,7 +60,7 @@ const Navbar = () => {
     <nav
       className={`fixed flex justify-center items-center top-0 right-0 left-0 ${
         isScrolled ? "bg-white shadow-sm" : "text-white"
-      } pb-40 sm:pb-0 p-4 z-[97]`}
+      } pb-[6rem] sm:pb-0 p-4 z-[97]`}
     >
       <div
         className={` ${
@@ -74,16 +74,7 @@ const Navbar = () => {
           className="sm:w-[685px] sm:h-[268px] opacity-90 "
         />
       </div>
-      <div
-        onClick={handleMenu}
-        className={`fixed top-[20%]  right-40 block lg:hidden z-[100] border border-opacity-20 border-black p-1 rounded-xl`}
-      >
-        {isMenuOpen ? (
-          <AiOutlineClose size={20} className="text-gray-600" />
-        ) : (
-          <AiOutlineMenu size={20} className="text-gray-600" />
-        )}
-      </div>
+
       <div className="container mx-auto py-2 flex justify-center items-center">
         <ul
           className={`hidden lg:flex ml-[150px] space-x-12  uppercase ${
@@ -93,8 +84,17 @@ const Navbar = () => {
           {renderMenuItems()}
         </ul>
       </div>
-
-      <div className="mr-[10px]">
+      <div className="flex items-center mr-[10px]">
+        <div
+          onClick={handleMenu}
+          className={` lg:hidden mr-20 z-[100] border border-opacity-20 border-black p-1 rounded-xl`}
+        >
+          {isMenuOpen ? (
+            <AiOutlineClose size={20} className="text-gray-600" />
+          ) : (
+            <AiOutlineMenu size={20} className="text-gray-600" />
+          )}
+        </div>{" "}
         <LanguageSwitcher color={color} />
       </div>
 

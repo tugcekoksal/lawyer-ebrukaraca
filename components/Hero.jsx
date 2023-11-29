@@ -6,12 +6,10 @@ const Hero = () => {
     <section className="overflow-hidden">
       <div
         style={{
-          backgroundImage: "url('/hero3.jpg')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          backgroundAttachment: "fixed",
         }}
-        className="hero-animation  relative  h-screen sm:h-screen  overflow-hidden bg-fixed overflow-hidden"
+        className="hero-image  relative  h-screen sm:h-screen  bg-center overflow-hidden"
       />
 
       <div className="flex justify-center items-center"></div>
