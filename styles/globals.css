@@ -26,21 +26,6 @@ body {
     opacity: 1;
   }
 }
-.custom-bg {
-  background-image: url("/quote.jpg");
-  position: relative; /* Required for absolute positioning of the pseudo-element */
-}
-
-.custom-bg::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-  z-index: 1;
-}
 
 .scroll-logo {
   position: fixed;
