@@ -4,9 +4,9 @@ import { Translation } from "../Translation";
 
 const uzmanlik = () => {
   return (
-    <div>
+    <section>
       <div
-        className="relative w-full h-[400px] bg-cover bg-center"
+        className="relative w-full h-[400px] bg-cover bg-center "
         style={{
           backgroundImage: 'url("/uzmanlik.jpg")',
         }}
@@ -17,7 +17,7 @@ const uzmanlik = () => {
         </h1>
       </div>
       <Uzmanlik />
-    </div>
+    </section>
   );
 };
 

@@ -32,7 +32,7 @@ const About = () => {
             transition={{ duration: 1.3, delay: 0.25 }}
             src="/profil.png"
             alt=""
-            className=" shadow-lg z-[9] w-2/4 sm:w-auto mb-6 lg:mb-0"
+            className=" shadow-lg z-[9] w-2/4 sm:w-auto mt-6 lg:mt-0"
             style={{
               height: "auto",
               maxWidth: "265px",

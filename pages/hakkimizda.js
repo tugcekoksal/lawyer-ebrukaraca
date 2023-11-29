@@ -41,8 +41,12 @@ const hakkimizda = () => {
             transition={{ duration: 1.3, delay: 0.25 }}
             src="/profil.png"
             alt=""
-            className=" shadow-lg z-[9] "
-            style={{ width: "265px", height: "365px", borderRadius: "50%" }}
+            className=" shadow-lg z-[9] w-2/4 sm:w-auto mt-6 lg:mt-0"
+            style={{
+              height: "auto",
+              maxWidth: "265px",
+              borderRadius: "50%",
+            }}
           />
         </div>
       </section>

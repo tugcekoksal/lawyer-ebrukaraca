@@ -61,16 +61,12 @@ body {
 @media (max-width: 640px) {
   .scroll-logo,
   .scrolled {
-    position: static; /* Removes fixed positioning */
-    transform: none;
-    top: auto;
-    left: auto; /* Reset left positioning */
-    right: auto; /* Reset right positioning if needed */
-    margin: 0 auto; /* Centers the logo horizontally */
-    display: block; /* Ensures block-level display for margin auto to work */
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5);
   }
 }
-
 .footer {
   position: relative;
   background-image: url("/column.jpg");
