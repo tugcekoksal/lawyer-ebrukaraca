@@ -60,7 +60,7 @@ const Navbar = () => {
     <nav
       className={`fixed flex justify-center items-center top-0 right-0 left-0 ${
         isScrolled ? "bg-white shadow-sm" : "text-white"
-      } pb-[6rem] sm:pb-0 p-4 z-[97]`}
+      } pb-[2rem] sm:pb-0 p-4 z-[97]`}
     >
       <div
         className={` ${
@@ -84,10 +84,10 @@ const Navbar = () => {
           {renderMenuItems()}
         </ul>
       </div>
-      <div className="flex items-center mr-[10px]">
+      <div className="flex items-center justify-center mr-[10px]">
         <div
           onClick={handleMenu}
-          className={` lg:hidden mr-20 z-[100] border border-opacity-20 border-black p-1 rounded-xl`}
+          className={` lg:hidden mr-2 z-[100] border border-opacity-20 border-black p-1 rounded-xl`}
         >
           {isMenuOpen ? (
             <AiOutlineClose size={20} className="text-gray-600" />

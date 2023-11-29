@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Translation } from "../Translation";
 
-
 const UsefulLinksCarousel = ({ links }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [visibleLinksCount, setVisibleLinksCount] = useState(4);
@@ -22,6 +21,13 @@ const UsefulLinksCarousel = ({ links }) => {
     handleResize();
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevActiveIndex) => (prevActiveIndex + 1) % links.length);
+    }, 2500); // Change every 2 seconds
+
+    return () => clearInterval(interval); // Clean up on component unmount
+  }, [links]);
 
   const goPrevious = () => {
     setActiveIndex((prevIndex) =>

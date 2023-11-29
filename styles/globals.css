@@ -40,6 +40,15 @@ body {
   transition: top 1.5s ease, left 1.5s ease, transform 1.5s ease;
   z-index: 98;
 }
+@media (max-width: 640px) {
+  .scroll-logo {
+    position: fixed;
+    top: 20%;
+    left: 0;
+    transition: top 1.5s ease, left 1.5s ease, transform 1.5s ease;
+    z-index: 98;
+  }
+}
 
 .scrolled {
   position: fixed;
@@ -50,14 +59,16 @@ body {
   transform: scale(0.3);
 }
 @media (max-width: 640px) {
-  .scroll-logo,
   .scrolled {
     position: fixed;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.5);
+    top: -65px;
+    left: -130px;
+    z-index: 98;
+    transition: top 1.5s ease, left 1.5s ease, transform 1.5s ease;
+    transform: scale(0.35);
   }
 }
+
 .footer {
   position: relative;
   background-image: url("/column.jpg");
@@ -82,4 +93,8 @@ body {
   height: 1px;
   background: currentColor;
   margin: 5px auto 0;
+}
+
+.carousel-item {
+  transition: transform 0.5s ease-in-out;
 }
