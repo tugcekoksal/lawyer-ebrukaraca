@@ -42,7 +42,13 @@ const Navbar = () => {
     ];
 
     return menuItems.map((item, index) => (
-      <li key={item} onClick={handleMenu} className="p-2 text-md font-serif">
+      <li
+        key={item}
+        onClick={handleMenu}
+        className={`p-2 text-md font-serif link ${
+          router.pathname === item ? "active-link" : ""
+        }`}
+      >
         <Link href={item}>
           <Translation textKey={menuItemKeys[index]} />
         </Link>
