@@ -14,7 +14,6 @@ const SEO = ({ title, description, keywords, ogImage, ogUrl }) => (
     <meta property="og:image" content={ogImage} />
     <meta property="og:url" content={ogUrl} />
     <meta property="og:type" content="website" />
-    {/* Add other SEO tags as needed */}
   </Head>
 );
 
