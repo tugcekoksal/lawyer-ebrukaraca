@@ -1,6 +1,6 @@
 import React from "react";
 import { Translation } from "../Translation";
-import SEO from "../components/Seo";
+import SEO from "@/components/SEO";
 
 const Iletisim = () => {
   const googleMapsEmbedLink =

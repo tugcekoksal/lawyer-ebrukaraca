@@ -1,7 +1,7 @@
 import Uzmanlik from "@/components/Uzmanlik";
 import React from "react";
 import { Translation } from "../Translation";
-import SEO from "../components/Seo";
+import SEO from "@/components/SEO";
 
 const uzmanlik = () => {
   return (

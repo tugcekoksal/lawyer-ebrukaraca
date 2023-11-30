@@ -1,7 +1,7 @@
 import React from "react";
 import ArticlesGrid from "@/components/ArticleGrid";
 import { Translation } from "../Translation";
-import SEO from "@/components/Seo";
+import SEO from "@/components/SEO";
 
 const makale = () => {
   return (
