@@ -1,7 +1,7 @@
 import React from "react";
 import { Translation } from "../Translation";
 import { motion } from "framer-motion";
-import SEO from "@/components/Seo";
+import SEO from "../components/Seo";
 
 const hakkimizda = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { Translation } from "../Translation";
-import SEO from "@/components/Seo";
+import SEO from "../components/Seo";
 
 const Iletisim = () => {
   const googleMapsEmbedLink =
@@ -10,7 +10,6 @@ const Iletisim = () => {
       <SEO
         title="İletişim - Ebru Karaca Hukuk ve Danışmanlık"
         description="Ebru Karaca Hukuk ve Danışmanlık iletişim bilgileri."
- 
         ogImage="/contact.jpg"
         ogUrl="http://www.ebrukaraca.av.tr/iletisim"
       />
