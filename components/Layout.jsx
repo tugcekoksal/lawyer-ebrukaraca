@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import UsefulLinksCarousel from "./UsefulLinksCarousel";
-
+import { Analytics } from "@vercel/analytics/react";
 const Layout = ({ children }) => {
   const linksData = [
     {
@@ -49,6 +49,7 @@ const Layout = ({ children }) => {
       <main className="flex-grow">
         {children}
         <UsefulLinksCarousel links={linksData} />
+        <Analytics />
       </main>
       <Footer />
     </div>
