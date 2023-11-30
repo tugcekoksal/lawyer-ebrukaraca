@@ -1,10 +1,18 @@
 import React from "react";
 import { Translation } from "../Translation";
 import { motion } from "framer-motion";
+import SEO from "@/components/Seo";
 
 const hakkimizda = () => {
   return (
     <section id="hakkimizda" className=" ">
+      <SEO
+        title="Hakkımızda - Ebru Karaca Hukuk ve Danışmanlık"
+        description="Ebru Karaca Hukuk ve Danışmanlık hakkında bilgiler."
+        ogImage="/hakkinda.jpg"
+        ogUrl="http://www.ebrukaraca.av.tr/hakkimizda"
+      />
+
       <div
         className="relative w-full h-[400px] bg-cover bg-center "
         style={{

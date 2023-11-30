@@ -1,10 +1,17 @@
 import React from "react";
 import ArticlesGrid from "@/components/ArticleGrid";
 import { Translation } from "../Translation";
+import SEO from "@/components/Seo";
 
 const makale = () => {
   return (
-    <div>
+    <section>
+      <SEO
+        title="Makaleler - Ebru Karaca Hukuk ve Danışmanlık"
+        description="Avukat Ebru Karaca Makaleler "
+        ogImage="/article.jpg"
+        ogUrl="http://www.ebrukaraca.av.tr/makale"
+      />
       <div
         className="relative w-full h-[400px] bg-center bg-cover"
         style={{
@@ -22,7 +29,7 @@ const makale = () => {
       <div className="my-10">
         <ArticlesGrid />
       </div>
-    </div>
+    </section>
   );
 };
 

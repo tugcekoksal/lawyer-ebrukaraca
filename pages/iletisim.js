@@ -1,11 +1,20 @@
 import React from "react";
 import { Translation } from "../Translation";
+import SEO from "@/components/Seo";
 
 const Iletisim = () => {
   const googleMapsEmbedLink =
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.711854819001!2d26.397612975979015!3d40.1487017719089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b1a9c8988fb14d%3A0x2377ac1869fc308f!2zRmV2emlwYcWfYSwgw4dhcsWfxLEgQ2QuIE5vOjggRDo5LCAxNzAwMCDDh2FuYWtrYWxlIE1lcmtlei_Dh2FuYWtrYWxlLCBUw7xya2l5ZQ!5e0!3m2!1sen!2sfr!4v1701091864577!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade';
   return (
     <section>
+      <SEO
+        title="İletişim - Ebru Karaca Hukuk ve Danışmanlık"
+        description="Ebru Karaca Hukuk ve Danışmanlık iletişim bilgileri."
+ 
+        ogImage="/contact.jpg"
+        ogUrl="http://www.ebrukaraca.av.tr/iletisim"
+      />
+
       <div className="relative bg-cover bg-center bg-fixed h-[400px] bg-[url('/contact.jpg')]">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <h1 className="absolute text-2xl sm:text-3xl md:text-4xl font-bold text-white left-8 sm:left-16 md:left-32 bottom-10 z-10">

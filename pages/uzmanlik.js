@@ -1,10 +1,17 @@
 import Uzmanlik from "@/components/Uzmanlik";
 import React from "react";
 import { Translation } from "../Translation";
+import SEO from "@/components/Seo";
 
 const uzmanlik = () => {
   return (
     <section>
+      <SEO
+        title="Uzmanlık Alanlarımız - Ebru Karaca Hukuk ve Danışmanlık"
+        description="Ebru Karaca Hukuk ve Danışmanlık uzmanlık alanlarımız"
+        ogImage="/uzmanlik.jpg"
+        ogUrl="http://www.ebrukaraca.av.tr/uzmanlik"
+      />
       <div
         className="relative w-full h-[400px] bg-cover bg-center "
         style={{
