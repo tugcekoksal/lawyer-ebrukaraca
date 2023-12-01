@@ -1,11 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { useLanguage } from "@/LanguageContext";
+import Image from "next/image";
 
 const flagMap = {
-  tr: "🇹🇷",
-  en: "🇬🇧",
-  // Add more languages and their corresponding flags here
+  tr: "/flags/turkish.png",
+  en: "/flags/english.png",
 };
 
 const LanguageSwitcher = () => {
@@ -35,23 +35,35 @@ const LanguageSwitcher = () => {
         className="px-2 py-1 flex items-center text-xl"
         onClick={() => setShowDropdown(!showDropdown)}
       >
-        {flagMap[language]}{" "}
-        <span className="ml-2">
+        <Image
+          src={flagMap[language]}
+          alt={`${language} flag`}
+          width={62}
+          height={44}
+          className="inline-block w-5 h-3 mr-1"
+        />
+        <span className="ml-1">
           <IoMdArrowDropdown />
         </span>
       </button>
 
       {showDropdown && (
-        <div className="absolute mt-2 py-2 w-[3rem] bg-white border rounded shadow-xl ">
+        <div className="absolute mt-2 py-2 w-[4rem] bg-white border rounded shadow-xl ">
           {Object.entries(flagMap).map(
-            ([code, flag]) =>
+            ([code, flagUrl]) =>
               code !== language && (
                 <button
                   key={code}
                   className="block px-4 py-2 text-xl w-full text-left text-black hover:bg-[#9b7157] hover:text-white"
                   onClick={() => handleLanguageChange(code)}
                 >
-                  {flag}
+                  <Image
+                    src={flagUrl}
+                    alt={`${code} flag`}
+                    width={62}
+                    height={44}
+                    className="inline-block w-5 h-3 mr-2"
+                  />
                 </button>
               )
           )}

@@ -88,12 +88,12 @@ const Navbar = () => {
         <LanguageSwitcher color={color} />
         <div
           onClick={handleMenu}
-          className={` lg:hidden ml-2 z-[100] border border-opacity-20 border-black p-1 rounded-xl`}
+          className={` lg:hidden ml-8 z-[100] border border-opacity-20 border-black p-1 rounded-xl`}
         >
           {isMenuOpen ? (
             <AiOutlineClose size={20} className="text-gray-600" />
           ) : (
-            <AiOutlineMenu size={20} className="text-gray-600" />
+            <AiOutlineMenu size={20} className={`${color}`} />
           )}
         </div>{" "}
       </div>

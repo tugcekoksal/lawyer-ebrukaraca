@@ -45,8 +45,12 @@ body {
     position: fixed;
     top: 20%;
     left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     transition: top 1.5s ease, left 1.5s ease, transform 1.5s ease;
     z-index: 98;
+    transform: scale(0.9);
   }
 }
 
@@ -61,8 +65,8 @@ body {
 @media (max-width: 640px) {
   .scrolled {
     position: fixed;
-    top: -65px;
-    left: -130px;
+    top: -68px;
+    left: -160px;
     z-index: 98;
     transition: top 1.5s ease, left 1.5s ease, transform 1.5s ease;
     transform: scale(0.35);
