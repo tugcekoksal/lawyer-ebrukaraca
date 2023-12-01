@@ -23,7 +23,7 @@ const uzmanlik = () => {
           <Translation textKey="uzmanlik" />
         </h1>
       </div>
-      <Uzmanlik />
+      <Uzmanlik numberOfCards={9} />
     </section>
   );
 };

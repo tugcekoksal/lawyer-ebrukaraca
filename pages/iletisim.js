@@ -14,7 +14,7 @@ const Iletisim = () => {
         ogUrl="http://www.ebrukaraca.av.tr/iletisim"
       />
 
-      <div className="relative bg-cover bg-center bg-fixed h-[400px] bg-[url('/contact.jpg')]">
+      <div className="relative bg-cover bg-center  h-[400px] bg-[url('/contact.jpg')]">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <h1 className="absolute text-2xl sm:text-3xl md:text-4xl font-bold text-white left-8 sm:left-16 md:left-32 bottom-10 z-10">
           <Translation textKey="iletisim" />

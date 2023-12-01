@@ -16,7 +16,7 @@ export default function Home() {
     img.onload = () => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 1500);
+      }, 500);
     };
 
     const handleScroll = () => {
@@ -46,7 +46,12 @@ export default function Home() {
 
           <About />
 
-          <Uzmanlik />
+          <h2 className="mx-6 md:mx-[7rem] font-bold text-xl ">
+            UZMANLIK ALANLARIMIZ
+          </h2>
+          <div className="mt-[-10px]">
+            <Uzmanlik numberOfCards={9} />
+          </div>
           <Quote />
         </div>
       )}
