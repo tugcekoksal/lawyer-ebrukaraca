@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-
+import Image from "next/image";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { Translation } from "../Translation";
 
@@ -58,7 +58,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed flex justify-center items-center top-0 right-0 left-0 ${
+      className={` fixed flex justify-center items-center top-0 right-0 left-0 ${
         isScrolled ? "bg-white shadow-sm" : "text-white"
       } pb-[2rem] sm:pb-0 p-4 z-[97]`}
     >
@@ -67,13 +67,15 @@ const Navbar = () => {
           !isScrolled && router.pathname === "/" ? "scroll-logo " : "scrolled"
         }`}
       >
-        <img
-          src={`${
+        <Image
+          src={
             router.pathname === "/" || isScrolled
-              ? "logo-siyah.png"
-              : "logo-beyaz.png"
-          }`}
-          className="sm:w-[685px] sm:h-[268px] opacity-90 "
+              ? "/logo-siyah.png"
+              : "/logo-beyaz.png"
+          }
+          alt="Logo"
+          width={685} // adjust as necessary
+          height={268} // adjust as necessary
         />
       </div>
 

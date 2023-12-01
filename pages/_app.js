@@ -2,8 +2,12 @@ import "@/styles/globals.css";
 import Layout from "@/components/Layout";
 import { LanguageProvider } from "@/LanguageContext";
 import Head from "next/head";
+import { useEffect } from "react";
 
 export default function App({ Component, pageProps }) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <LanguageProvider>
       <Layout>
