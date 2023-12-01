@@ -20,7 +20,7 @@ const ArticleDetail = () => {
       {article ? (
         <article>
           <div
-            className="relative w-full h-[300px] bg-cover bg-fixed bg-center"
+            className="relative w-full h-[300px] bg-cover  bg-center"
             style={{ backgroundImage: `url('${article.imageUrl}')` }}
           >
             <div className="absolute inset-0 bg-black opacity-50"></div>

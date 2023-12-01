@@ -69,7 +69,9 @@ const Navbar = () => {
       >
         <img
           src={`${
-            router.pathname === "/" || isScrolled ? "logo2.png" : "logo4.png"
+            router.pathname === "/" || isScrolled
+              ? "logo-siyah.png"
+              : "logo-beyaz.png"
           }`}
           className="sm:w-[685px] sm:h-[268px] opacity-90 "
         />
