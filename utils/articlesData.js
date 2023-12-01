@@ -4,7 +4,7 @@ export const articles = [
     title: "Bilişim Hukuku: Dijital Çağda Yasal Zorluklar",
     summary:
       "İnternet hukuku, siber suçlar ve dijital veri koruması üzerine güncel bilgiler.",
-    imageUrl: "https://source.unsplash.com/featured/?gavel",
+    imageUrl: "/makale/1.jpg",
     content: [
       {
         section: "İnternet Hukukunun Temelleri",
@@ -33,7 +33,7 @@ export const articles = [
     title: "Gaye Mahkemeleri: Hak Arayışında Bir Yol Haritası",
     summary:
       "Gayrimenkul, miras gibi konularda gaye mahkemelerinin işleyişi ve bu süreçlerde dikkat edilmesi gerekenler.",
-    imageUrl: "https://source.unsplash.com/featured/?will,law",
+    imageUrl: "/makale/2.jpg",
 
     content: [
       {
@@ -84,7 +84,7 @@ export const articles = [
       "Online Ticarette Tüketici Hakları: E-Ticarette Dikkat Edilmesi Gerekenler",
     summary:
       "İnternet üzerinden alışveriş yapan tüketicilerin hakları ve e-ticaret platformları için yasal yükümlülükler.",
-    imageUrl: "https://source.unsplash.com/featured/?law,book",
+    imageUrl: "/makale/3.jpg",
     content: [
       {
         section: "Bilgiye Erişim Hakkı",
