@@ -12,7 +12,7 @@ export default function Home() {
 
   useEffect(() => {
     const img = new Image();
-    img.src = "/hero1.jpg";
+    img.src = "/hero3.jpg";
     img.onload = () => {
       setTimeout(() => {
         setIsLoading(false);
