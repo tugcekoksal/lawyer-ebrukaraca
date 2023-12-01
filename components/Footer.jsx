@@ -1,31 +1,34 @@
 import React from "react";
 import { Translation } from "../Translation";
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <footer className="footer text-white py-[5rem]">
-      <div className="container mx-auto px-6 lg:px-8 flex flex-wrap justify-between items-center">
-        <div className="w-full lg:w-auto mb-6 lg:mb-0 text-center lg:text-left">
-          <img
-            src="logo-beyaz.png"
+      <div className="container mx-auto px-6 lg:px-8 flex flex-wrap justify-between items-center text-center lg:text-left">
+        <div className="w-full lg:w-auto mb-6 lg:mb-0 items-center">
+          <Image
+            src="/logo-beyaz.png"
             alt="Logo"
-            className="w-[17rem] h-auto opacity-90 mb-10 md:mb-0 "
+            width={272}
+            height={68}
+            className="opacity-90 mb-10 md:mb-0"
           />
         </div>
-        <div className="w-full lg:w-auto mb-6 lg:mb-0 max-w-xs text-center lg:text-left z-[10]">
+        <div className="w-full lg:w-auto mb-6 lg:mb-0 max-w-xs items-center z-[10] leading-loose">
           <h2 className="text-md md:text-xl font-bold mb-2">
             <Translation textKey="adres" />
           </h2>
-          <p className="text-sm md:text-lg max-w-[300px]">
+          <p className="text-sm md:text-lg max-w-[300px] mx-auto lg:mx-0 leading-relaxed">
             Fevzipaşa mah. Çarşı cad. Fatih sok. no:8 Daire:9 Merkez/ÇANAKKALE
           </p>
         </div>
-        <div className="w-full lg:w-auto max-w-xs text-center lg:text-left z-10">
+        <div className="w-full lg:w-auto max-w-xs text-center lg:text-left z-10 leading-relaxed">
           <h2 className="text-md md:text-xl font-bold mb-2">
             <Translation textKey="iletisim" />
           </h2>
-          <div className="flex items-center justify-center lg:justify-start gap-2">
+          <div className="flex items-center justify-center lg:justify-start gap-2 ">
             <AiOutlinePhone className="text-lg" />
             <p className="text-sm md:text-lg">0507 576 79 59</p>
           </div>
