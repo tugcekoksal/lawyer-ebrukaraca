@@ -1,6 +1,6 @@
 import { uzmanlik } from "@/utils/uzmanlikData";
 import { useRouter } from "next/router";
-
+import { Translation } from "../../Translation";
 // const UzmanlikDetail = () => {
 //   const router = useRouter();
 //   const { id } = router.query;
@@ -34,8 +34,8 @@ const UzmanlikDetail = () => {
         style={{ backgroundImage: `url('/makale/1.jpg')` }}
       ></div>
       <div className="container mx-auto px-4 py-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="md:col-span-2">
             <h2 className="text-xl font-bold uppercase mb-10">
               {servis.title}
             </h2>
@@ -45,11 +45,8 @@ const UzmanlikDetail = () => {
               </div>
             ))}
           </div>
-          <div>
-            <ListSection
-              title="Hizmetlerimiz"
-              items={uzmanlik.map((servis) => servis.title)}
-            />
+          <div className="md:col-span-1">
+            <ListSection items={uzmanlik.map((servis) => servis.title)} />
           </div>
         </div>
       </div>
@@ -65,10 +62,13 @@ const Section = ({ content }) => {
   );
 };
 
-const ListSection = ({ title, items }) => {
+const ListSection = ({ items }) => {
   return (
-    <div className="flex items-center flex-col">
-      <h3 className="text-lg font-bold mb-10 ">{title}</h3>
+    <div className="flex pl-[30%] flex-col">
+      <h3 className="text-lg font-bold mb-10 uppercase ">
+        {" "}
+        <Translation textKey={"hizmet"} />
+      </h3>
       <ul className="list-none space-y-2">
         {items.map((item, index) => (
           <li
