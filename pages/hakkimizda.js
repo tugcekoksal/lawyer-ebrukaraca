@@ -32,7 +32,7 @@ const hakkimizda = () => {
         <div className="relative flex-1 flex justify-center items-start flex-col  w-full h-full  ">
           {" "}
           <h1 className="font-bold text-2xl uppercase py-10 ">
-            Ebru Karaca Hukuk ve Danismanlik
+            <Translation textKey="baslik" />
           </h1>
           <p className="text-lg leading-loose">
             <Translation textKey="about" />

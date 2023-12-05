@@ -64,7 +64,7 @@ export default function Home() {
             <hr className="my-4 w-[3%]  border-[#bea78a] border-t-[3px] mt-4" />
           </div>
           <div className="mt-[-10px]">
-            <Uzmanlik numberOfCards={3} col={3} />
+            <Uzmanlik numberOfCards={3} />
           </div>
           <Quote />
         </div>

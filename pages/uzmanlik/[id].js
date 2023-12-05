@@ -1,11 +1,19 @@
-import React from "react";
-import { uzmanlik } from "@/utils/uzmanlikData"; // Adjust the path as necessary
+import { uzmanlik } from "@/utils/uzmanlikData";
 import { useRouter } from "next/router";
-import { Translation } from "../../Translation";
-import Link from "next/link";
 
 const UzmanlikDetail = () => {
-  return <section className="bg-white">deneme</section>;
+  const router = useRouter();
+  const { id } = router.query;
+  const servisId = Number(id);
+  const servis = uzmanlik.find((servis) => servis.id === servisId);
+  return (
+    <section className="bg-white">
+      <div
+        className="relative w-full h-[300px] bg-cover  bg-center"
+        style={{ backgroundImage: `url('/makale/1.jpg')` }}
+      ></div>
+    </section>
+  );
 };
 
 export default UzmanlikDetail;
