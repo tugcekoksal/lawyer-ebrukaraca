@@ -7,9 +7,9 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 const TopBar = () => {
-  const phoneNumber = "00905075767959";
+  const phoneNumber = "905075767959";
   const preFilledMessage = encodeURIComponent(
-    "Hello, I'd like to inquire about..."
+    "Merhaba, bir konuda danışmanlık almak istiyorum"
   );
   return (
     <div className="hidden md:flex px-10 z-[120] bg-[#414040] text-white text-sm py-2  md:justify-between items-center">
