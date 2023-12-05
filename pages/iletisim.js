@@ -65,20 +65,20 @@ const Iletisim = () => {
         <div className="flex flex-wrap">
           <div className="w-full px-4 lg:w-1/3 mb-6 lg:mb-0">
             <div className="mb-6">
-              <h3 className="text-2xl font-semibold mb-2 leading-snug">
-                Telefon
+              <h3 className="text-xl font-semibold mb-2 leading-snug">
+                <Translation textKey="telefon" />
               </h3>
               <p className="text-lg leading-normal">0507 576 79 59</p>
             </div>
             <div className="mb-6">
-              <h3 className="text-2xl font-semibold mb-2 leading-snug">
-                E-mail
+              <h3 className="text-xl font-semibold mb-2 leading-snug">
+                E-MAIL
               </h3>
               <p className="text-lg leading-normal">av.karacaebru@gmail.com</p>
             </div>
             <div className="mb-6">
-              <h3 className="text-2xl font-semibold mb-2 leading-snug">
-                Adres
+              <h3 className="text-xl font-semibold mb-2 leading-snug">
+                <Translation textKey="adres" />
               </h3>
               <p className="text-lg leading-normal">
                 Fevzipaşa mah. Çarşı cad. Fatih sok. no:8 Daire:9
