@@ -10,7 +10,6 @@ const UzmanlikKart = ({ src, name, id }) => {
     <motion.div
       className=" relative group shadow-lg hover:shadow-2xl rounded-sm hover:border border-[#22161e] overflow-hidden  "
       onMouseEnter={() => setHovered(true)}
-      // onClick={toggleOverlay}
       onMouseLeave={() => setHovered(false)}
       variants={{
         hidden: { opacity: 0, y: 95 },
@@ -32,15 +31,18 @@ const UzmanlikKart = ({ src, name, id }) => {
         }`}
       />
       <div className="absolute inset-0 flex flex-col bg-black bg-opacity-30 items-center justify-center ">
-        <p className="text-xl font-bold  group-hover:bg-black group-hover:bg-opacity-50   text-white p-10 w-full text-center ">
-          <Translation textKey={name} />
-        </p>
-        <a
-          href={`/uzmanlik/${id}`}
-          className="inline-block text-xs font-semibold text-white uppercase hover:text-blue-800 mr-2 mb-2 "
-        >
-          Devamını Oku &raquo;
-        </a>
+        <div className=" group-hover:bg-black group-hover:bg-opacity-50 w-full text-center">
+          {" "}
+          <p className="text-xl font-bold   text-white p-10   ">
+            <Translation textKey={name} />
+          </p>
+          <a
+            href={`/uzmanlik/${id}`}
+            className="inline-block text-xs font-semibold text-white uppercase hover:text-blue-800 mr-2 mb-2 "
+          >
+            Detaylar &raquo;
+          </a>
+        </div>
       </div>
     </motion.div>
   );

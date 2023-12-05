@@ -27,7 +27,7 @@ const Uzmanlik = ({ numberOfCards, col }) => {
             id={index}
           />
         ))} */}
-        {uzmanlik.map((uzmanlik) => (
+        {uzmanlik.slice(0, numberOfCards).map((uzmanlik) => (
           <UzmanlikKart
             key={uzmanlik.id}
             {...uzmanlik}

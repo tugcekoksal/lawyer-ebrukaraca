@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }) {
           />
           <meta http-equiv="X-UA-Compatible" content="ie=edge" />
           {/* Primary Meta Tags */}
-          <title>EBRU KARACA - HUKUK VE DANIŞMANLIK</title>
+          <title>AVUKAT EBRU KARACA - HUKUK VE DANIŞMANLIK</title>
           <meta name="title" content="Ebru Karaca -  Hukuk ve Danışmanlık" />
           <meta
             name="description"
