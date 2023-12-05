@@ -8,14 +8,14 @@ const About = () => {
       <section
         id="about"
         style={{ backgroundImage: "url('/about-background.jpg')" }}
-        className="relative grid grid-cols-1 lg:grid-cols-2  justify-center bg-cover items-center m-6 md:m-[7rem]  shadow-2xl bg-center h-auto md:h-screen px-2 sm:px-[5rem] overflow-hidden "
+        className="relative grid grid-cols-1 lg:grid-cols-2  justify-center bg-cover items-center m-6 md:m-[7rem]   shadow-2xl bg-center h-auto md:h-screen px-2 sm:px-[5rem] overflow-hidden mb-[7rem] "
       >
         <div className="absolute inset-0 bg-white opacity-70"></div>
 
         <div className="relative flex-1 flex justify-center items-start flex-col  w-full h-full p-6  ">
           {" "}
           <h1 className="font-bold text-lg md:text-2xl uppercase py-10">
-            Ebru Karaca Hukuk & Danismanlik
+            <Translation textKey="baslik" />
           </h1>
           <p className="text-lg leading-loose ">
             <Translation textKey="about" />

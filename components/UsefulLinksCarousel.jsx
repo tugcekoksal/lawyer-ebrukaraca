@@ -42,7 +42,7 @@ const UsefulLinksCarousel = ({ links }) => {
   return (
     <div className="bg-white py-8 w-full">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-center my-8 uppercase">
+        <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-center my-10 uppercase">
           <Translation textKey="link" />
         </h2>
         <div className="flex items-center justify-center w-full">
@@ -53,7 +53,7 @@ const UsefulLinksCarousel = ({ links }) => {
           >
             <FaChevronLeft className="h-6 w-6" />
           </button>
-          <div className="flex overflow-hidden w-full">
+          <div className="flex overflow-hidden w-full mt-10">
             {visibleLinks.map((link, index) => (
               <a
                 key={`${link.name}-${index}`}
@@ -78,7 +78,7 @@ const UsefulLinksCarousel = ({ links }) => {
             <FaChevronRight className="h-6 w-6" />
           </button>
         </div>
-        <div className="flex justify-center mt-4 w-full">
+        <div className="flex justify-center my-8 w-full ">
           {links.map((_, index) => (
             <button
               key={index}

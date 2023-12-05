@@ -6,6 +6,7 @@ import About from "@/components/About";
 import Quote from "@/components/Quote";
 import Uzmanlik from "@/components/Uzmanlik";
 import TopBar from "@/components/TopBar";
+import { Translation } from "../Translation";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -48,17 +49,17 @@ export default function Home() {
           <About />
           <div className="flex justify-center items-center flex-col">
             <p className="text-sm mb-5 font-bold text-[#bbbcbc]">
-              EBRU KARACA HUKUK VE DANIŞMANLIK
+              <Translation textKey="baslik" />
             </p>
-            <h2 className="mx-6 md:mx-[7rem] font-bold text-4xl mb-8 ">
-              Çalışma Alanlarımız
+            <h2 className="mx-6 md:mx-[7rem] font-bold text-xl md:text-3xl mb-8 ">
+              <Translation textKey="uzmanlik" />
             </h2>
             <Link
               href={"/uzmanlik"}
               className="text-sm text-[#bea78a] font-bold"
             >
               {" "}
-              TÜMÜNÜ GÖR →
+              <Translation textKey="tumunugor" /> →
             </Link>
             <hr className="my-4 w-[3%]  border-[#bea78a] border-t-[3px] mt-4" />
           </div>
