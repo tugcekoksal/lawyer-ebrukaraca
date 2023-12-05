@@ -61,7 +61,7 @@ const Navbar = () => {
       className={` fixed flex justify-center items-center right-0 left-0 ${
         isScrolled ? "bg-white shadow-sm " : "text-white "
       } ${
-        !isScrolled && router.pathname === "/" ? "top-10" : "top-0"
+        !isScrolled && router.pathname === "/" ? "top-8" : "top-0"
       } pb-[2rem] sm:pb-0 p-4 z-[97]`}
     >
       <Link

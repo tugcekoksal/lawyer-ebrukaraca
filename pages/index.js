@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import { PuffLoader } from "react-spinners";
 import { useState, useEffect } from "react";
-import Navbar from "@/components/Navbar";
+import Link from "next/link";
 import About from "@/components/About";
 import Quote from "@/components/Quote";
 import Uzmanlik from "@/components/Uzmanlik";
@@ -45,14 +45,25 @@ export default function Home() {
         <div className="relative">
           <TopBar />
           <Hero />
-
           <About />
-
-          <h2 className="mx-6 md:mx-[7rem] font-bold text-xl ">
-            UZMANLIK ALANLARIMIZ
-          </h2>
+          <div className="flex justify-center items-center flex-col">
+            <p className="text-sm mb-5 font-bold text-[#bbbcbc]">
+              EBRU KARACA HUKUK VE DANIŞMANLIK
+            </p>
+            <h2 className="mx-6 md:mx-[7rem] font-bold text-4xl mb-8 ">
+              Çalışma Alanlarımız
+            </h2>
+            <Link
+              href={"/uzmanlik"}
+              className="text-sm text-[#bea78a] font-bold"
+            >
+              {" "}
+              TÜMÜNÜ GÖR →
+            </Link>
+            <hr className="my-4 w-[3%]  border-[#bea78a] border-t-[3px] mt-4" />
+          </div>
           <div className="mt-[-10px]">
-            <Uzmanlik numberOfCards={9} />
+            <Uzmanlik col={4} numberOfCards={4} />
           </div>
           <Quote />
         </div>
