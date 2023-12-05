@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Translation } from "../Translation";
 
-const UzmanlikKart = ({ src, alt }) => {
+const UzmanlikKart = ({ src, name, id }) => {
   const [hovered, setHovered] = useState(false);
   return (
     <motion.div
@@ -23,7 +23,7 @@ const UzmanlikKart = ({ src, alt }) => {
       {" "}
       <Image
         src={src}
-        alt={alt}
+        alt={name}
         width={500}
         height={500}
         objectFit="cover"
@@ -31,10 +31,16 @@ const UzmanlikKart = ({ src, alt }) => {
           hovered ? "duration-1000 transform scale-110" : "duration-1000"
         }`}
       />
-      <div className="absolute inset-0 flex  bg-black bg-opacity-30 items-center justify-center ">
+      <div className="absolute inset-0 flex flex-col bg-black bg-opacity-30 items-center justify-center ">
         <p className="text-xl font-bold  group-hover:bg-black group-hover:bg-opacity-50   text-white p-10 w-full text-center ">
-          <Translation textKey={alt} />
+          <Translation textKey={name} />
         </p>
+        <a
+          href={`/uzmanlik/${id}`}
+          className="inline-block text-xs font-semibold text-white uppercase hover:text-blue-800 mr-2 mb-2 "
+        >
+          Devamını Oku &raquo;
+        </a>
       </div>
     </motion.div>
   );
