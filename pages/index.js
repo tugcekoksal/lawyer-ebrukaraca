@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import About from "@/components/About";
 import Quote from "@/components/Quote";
 import Uzmanlik from "@/components/Uzmanlik";
+import TopBar from "@/components/TopBar";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -42,6 +43,7 @@ export default function Home() {
         </div>
       ) : (
         <div className="relative">
+          <TopBar />
           <Hero />
 
           <About />

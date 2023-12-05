@@ -105,7 +105,7 @@ body {
 
 .hover-bg-effect {
   background-size: 200% 100%;
-  background-image: linear-gradient(to right, transparent 50%, slategray 50%);
+  background-image: linear-gradient(to right, transparent 50%, #414040 50%);
   transition: background-position 0.5s ease;
 }
 

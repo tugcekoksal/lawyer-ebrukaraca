@@ -28,6 +28,7 @@ export default function App({ Component, pageProps }) {
             content="Ebru Karaca hukuk bürosu Çanakkale ve çevre illerde güvenilir ve deneyimli hukuk danışmanlık hizmetleri sunar."
           />
         </Head>
+
         <Component {...pageProps} />
       </Layout>
     </LanguageProvider>
