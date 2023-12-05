@@ -1,8 +1,48 @@
 import React from "react";
 import { Translation } from "../Translation";
 import SEO from "@/components/SEO";
+import emailjs from "emailjs-com";
+import { useState } from "react";
 
 const Iletisim = () => {
+  const [statusMessage, setStatusMessage] = useState("");
+  const [error, setError] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Reset previous error messages
+    setError("");
+
+    // Simple validation check
+    if (
+      !e.target.from_name.value ||
+      !e.target.user_email.value ||
+      !e.target.user_tel.value ||
+      !e.target.message.value
+    ) {
+      setError("Lütfen tüm alanları doldurunuz.");
+      return; // Stop the function if validation fails
+    }
+
+    try {
+      const result = await emailjs.sendForm(
+        "service_pzj24ye",
+        "template_p1qsjlg",
+        e.target,
+        "ajNw8hHBtWDc-5DQT"
+      );
+      if (result.text === "OK") {
+        setStatusMessage("E-posta başarıyla gönderildi.");
+        e.target.reset(); // Reset form after successful submission
+      } else {
+        setStatusMessage("E-posta gönderilirken bir hata oluştu.");
+      }
+    } catch (error) {
+      setStatusMessage("E-posta gönderilirken bir hata oluştu.");
+      console.error("E-posta gönderilirken bir hata oluştu:", error);
+    }
+  };
   const googleMapsEmbedLink =
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.711854819001!2d26.397612975979015!3d40.1487017719089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b1a9c8988fb14d%3A0x2377ac1869fc308f!2zRmV2emlwYcWfYSwgw4dhcsWfxLEgQ2QuIE5vOjggRDo5LCAxNzAwMCDDh2FuYWtrYWxlIE1lcmtlei_Dh2FuYWtrYWxlLCBUw7xya2l5ZQ!5e0!3m2!1sen!2sfr!4v1701091864577!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade';
   return (
@@ -54,43 +94,65 @@ const Iletisim = () => {
             <h2 className="text-2xl sm:text-3xl font-semibold mb-6 sm:mb-10 leading-tight">
               <Translation textKey="mesaj" />
             </h2>
-            <form>
+            <form onSubmit={handleSubmit}>
+              {/* Name Input */}
               <div className="mb-6">
                 <input
                   type="text"
+                  id="from_name"
+                  name="from_name"
                   placeholder="Ad Soyad  "
                   className="form-input mt-1 block w-full border-0 border-b-2 border-gold-500 leading-relaxed"
                 />
               </div>
+              {/* Email Input */}
               <div className="mb-6">
                 <input
-                  type="email"
+                  id="email"
+                  name="user_email"
                   placeholder="E-mail"
                   className="form-input mt-1 block w-full border-0 border-b-2 border-gold-500 leading-relaxed"
                 />
               </div>
+              {/* Phone Number Input */}
               <div className="mb-6">
                 <input
                   type="tel"
+                  id="phoneNumber"
+                  name="user_tel"
                   placeholder="Telefon Numarası"
                   className="form-input mt-1 block w-full border-0 border-b-2 border-gold-500 leading-relaxed"
                 />
               </div>
+              {/* Message Textarea */}
               <div className="mb-6">
                 <textarea
+                  name="message"
+                  id="message"
                   placeholder="Mesajınız"
                   className="form-textarea mt-1 block w-full border-0 border-b-2 border-gold-500 leading-relaxed"
                 ></textarea>
               </div>
+              {/* Submit Button */}
               <div className="flex justify-center">
                 <button
                   type="submit"
-                  className="w-full sm:w-auto border-gray-600 border text-gray-500 font-semibold py-2 px-6 rounded-full"
+                  className="w-full hover:text-white sm:w-auto border-gray-600 border text-gray-500 font-semibold py-2 px-6 rounded-full hover-bg-effect"
                 >
                   <Translation textKey="gonder" />
                 </button>
               </div>
             </form>
+            {statusMessage && (
+              <div className="mt-4 p-4 bg-blue-100 border border-blue-400 text-blue-700 rounded-md">
+                {statusMessage}
+              </div>
+            )}
+            {error && (
+              <div className="mt-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded-md">
+                {error}
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -102,3 +102,13 @@ body {
 .carousel-item {
   transition: transform 0.5s ease-in-out;
 }
+
+.hover-bg-effect {
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, transparent 50%, slategray 50%);
+  transition: background-position 0.5s ease;
+}
+
+.hover-bg-effect:hover {
+  background-position: -100% 0;
+}

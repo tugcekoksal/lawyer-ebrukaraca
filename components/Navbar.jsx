@@ -62,7 +62,8 @@ const Navbar = () => {
         isScrolled ? "bg-white shadow-sm" : "text-white"
       } pb-[2rem] sm:pb-0 p-4 z-[97]`}
     >
-      <div
+      <Link
+        href={"/"}
         className={` ${
           !isScrolled && router.pathname === "/" ? "scroll-logo " : "scrolled"
         }`}
@@ -77,7 +78,7 @@ const Navbar = () => {
           width={685} // adjust as necessary
           height={268} // adjust as necessary
         />
-      </div>
+      </Link>
 
       <div className="container mx-auto py-2 flex justify-center items-center">
         <ul
