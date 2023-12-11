@@ -43,7 +43,7 @@ body {
 @media (max-width: 640px) {
   .scroll-logo {
     position: fixed;
-    top: 20%;
+    top: 16%;
     left: 0;
     right: 0;
     bottom: 0;
