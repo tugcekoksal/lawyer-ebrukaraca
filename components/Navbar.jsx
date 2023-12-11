@@ -45,7 +45,7 @@ const Navbar = () => {
       <li
         key={item}
         onClick={handleMenu}
-        className={`p-2 text-md font-serif link ${
+        className={`py-2  text-md font-serif link ${
           router.pathname === item ? "active-link" : ""
         }`}
       >

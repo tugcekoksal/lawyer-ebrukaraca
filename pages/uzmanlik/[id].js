@@ -1,20 +1,7 @@
 import { uzmanlik } from "@/utils/uzmanlikData";
 import { useRouter } from "next/router";
 import { Translation } from "../../Translation";
-// const UzmanlikDetail = () => {
-//   const router = useRouter();
-//   const { id } = router.query;
-//   const servisId = Number(id);
-//   const servis = uzmanlik.find((servis) => servis.id === servisId);
-//   return (
-//     <section className="bg-white">
-//       <div
-//         className="relative w-full h-[300px] bg-cover  bg-center"
-//         style={{ backgroundImage: `url('/makale/1.jpg')` }}
-//       ></div>
-//     </section>
-//   );
-// };
+import Link from "next/link";
 
 // Ana bileşenimizi ve alt bileşenlerimizi tanımlayalım.
 const UzmanlikDetail = () => {
@@ -23,8 +10,6 @@ const UzmanlikDetail = () => {
   const servisId = Number(id);
   const servis = uzmanlik.find((servis) => servis.id === servisId);
   if (!servis) {
-    // Handle the case where servis is not found
-    // This could be a loading state, error message, or redirect
     return <div>Loading...</div>; // or any other fallback UI
   }
   return (
@@ -46,7 +31,10 @@ const UzmanlikDetail = () => {
             ))}
           </div>
           <div className="md:col-span-1">
-            <ListSection items={uzmanlik.map((servis) => servis.title)} />
+            <ListSection
+              items={uzmanlik.map((servis) => servis.title)}
+              currentServisId={servisId}
+            />
           </div>
         </div>
       </div>
@@ -62,7 +50,7 @@ const Section = ({ content }) => {
   );
 };
 
-const ListSection = ({ items }) => {
+const ListSection = ({ items, currentServisId }) => {
   return (
     <div className="flex pl-[30%] flex-col">
       <h3 className="text-lg font-bold mb-10 uppercase ">
@@ -70,14 +58,19 @@ const ListSection = ({ items }) => {
         <Translation textKey={"hizmet"} />
       </h3>
       <ul className="list-none space-y-2">
-        {items.map((item, index) => (
-          <li
-            key={index}
-            className="border-l-4 pl-2 border-gray-400 leading-loose"
-          >
-            {item}
-          </li>
-        ))}
+        {items.map((item, index) => {
+          const isActive = uzmanlik[index].id === currentServisId;
+          return (
+            <li
+              key={index}
+              className={`border-l-4 pl-2 leading-loose ${
+                isActive ? "border-blue-500 font-bold" : "border-gray-400"
+              }`}
+            >
+              {item}
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

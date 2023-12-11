@@ -12,7 +12,7 @@ const About = () => {
       >
         <div className="absolute inset-0 bg-white opacity-70"></div>
 
-        <div className="relative flex-1 flex justify-center items-start flex-col  w-full h-full p-6  ">
+        <div className="relative flex-1 flex justify-center items-start flex-col  w-full h-full p-4  ">
           {" "}
           <h1 className="font-bold text-lg md:text-2xl uppercase py-10">
             <Translation textKey="baslik" />
