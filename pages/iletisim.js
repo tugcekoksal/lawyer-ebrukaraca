@@ -43,8 +43,9 @@ const Iletisim = () => {
       console.error("E-posta gönderilirken bir hata oluştu:", error);
     }
   };
+
   const googleMapsEmbedLink =
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.711854819001!2d26.397612975979015!3d40.1487017719089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b1a9c8988fb14d%3A0x2377ac1869fc308f!2zRmV2emlwYcWfYSwgw4dhcsWfxLEgQ2QuIE5vOjggRDo5LCAxNzAwMCDDh2FuYWtrYWxlIE1lcmtlei_Dh2FuYWtrYWxlLCBUw7xya2l5ZQ!5e0!3m2!1sen!2sfr!4v1701091864577!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade';
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.7777330206663!2d26.4013338!3d40.147234499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xea2404e8b731039%3A0xc60848c18991d846!2sAvukat%20Ebru%20Karaca%20Hukuk%20ve%20Dan%C4%B1%C5%9Fmanl%C4%B1k!5e0!3m2!1str!2str!4v1702456088256!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade';
   return (
     <section>
       <SEO
