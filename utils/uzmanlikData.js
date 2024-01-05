@@ -133,7 +133,7 @@ export const uzmanlik = [
   {
     id: 5,
     name: "is",
-    title: "İs Hukuku",
+    title: "İş Hukuku",
     summary:
       "İnternet üzerinden alışveriş yapan tüketicilerin hakları ve e-ticaret platformları için yasal yükümlülükler.",
     imageUrl: "/makale/3.jpg",
@@ -231,7 +231,7 @@ export const uzmanlik = [
   {
     id: 7,
     name: "sirket",
-    title: "Sirket Hukuku",
+    title: "Şirketler Hukuku",
     summary:
       "İnternet üzerinden alışveriş yapan tüketicilerin hakları ve e-ticaret platformları için yasal yükümlülükler.",
     imageUrl: "/makale/3.jpg",
@@ -280,7 +280,7 @@ export const uzmanlik = [
   {
     id: 8,
     name: "yabancilar",
-    title: "Yabancilar Hukuku",
+    title: "Yabancılar Hukuku",
     summary:
       "İnternet üzerinden alışveriş yapan tüketicilerin hakları ve e-ticaret platformları için yasal yükümlülükler.",
     imageUrl: "/makale/3.jpg",
