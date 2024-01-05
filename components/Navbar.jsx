@@ -54,7 +54,7 @@ const Navbar = () => {
           <div className="flex flex-col items-start">
             <Translation textKey={menuItemKeys[index]} />
             {item === "/uzmanlik" && (
-              <div className="absolute z-[200] left-0 mt-8 w-full bg-white text-black text-xs p-1 opacity-0 group-hover:opacity-100 duration-300 z-10">
+              <div className="hidden md:absolute z-[200] left-0 mt-8 w-full bg-white text-black text-xs p-1 opacity-0 group-hover:opacity-100 duration-300 ">
                 {uzmanlik.map((subItem) => (
                   <Link
                     href={`/uzmanlik/${subItem.id}`}
