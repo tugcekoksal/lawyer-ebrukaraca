@@ -14,7 +14,7 @@ const UzmanlikDetail = () => {
   return (
     <section>
       <SEO
-        title={`Çanakkale Hukuk ve Danışmanlık - ${servis.title} `}
+        title={`Çanakkale ${servis.title} Avukatı`}
         description={`Çanakkale ${servis.title}`}
         ogImage="/makale/1.jpg"
         ogUrl="http://www.ebrukaraca.av.tr/uzmanlik"
