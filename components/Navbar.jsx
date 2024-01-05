@@ -5,6 +5,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Image from "next/image";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { Translation } from "../Translation";
+import { uzmanlik } from "@/utils/uzmanlikData";
 
 const Navbar = () => {
   const router = useRouter();
@@ -45,12 +46,27 @@ const Navbar = () => {
       <li
         key={item}
         onClick={handleMenu}
-        className={`py-2  text-md font-serif link ${
+        className={`py-2  text-md font-serif link relative group ${
           router.pathname === item ? "active-link" : ""
         }`}
       >
         <Link href={item}>
-          <Translation textKey={menuItemKeys[index]} />
+          <div className="flex flex-col items-start">
+            <Translation textKey={menuItemKeys[index]} />
+            {item === "/uzmanlik" && (
+              <div className="absolute left-0 mt-8 w-full bg-white text-black text-xs p-1 opacity-0 group-hover:opacity-100 duration-300 z-10">
+                {uzmanlik.map((subItem) => (
+                  <Link
+                    href={`/uzmanlik/${subItem.id}`}
+                    key={subItem.name}
+                    className="block p-2  hover:bg-[#634927] hover:text-white"
+                  >
+                    <Translation textKey={subItem.name} />
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
         </Link>
       </li>
     ));
