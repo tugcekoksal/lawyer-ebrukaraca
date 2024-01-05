@@ -1,9 +1,8 @@
 import { uzmanlik } from "@/utils/uzmanlikData";
 import { useRouter } from "next/router";
 import { Translation } from "../../Translation";
-import Link from "next/link";
+import SEO from "@/components/SEO";
 
-// Ana bileşenimizi ve alt bileşenlerimizi tanımlayalım.
 const UzmanlikDetail = () => {
   const router = useRouter();
   const { id } = router.query;
@@ -14,6 +13,12 @@ const UzmanlikDetail = () => {
   }
   return (
     <section>
+      <SEO
+        title={`Çanakkale Hukuk ve Danışmanlık - ${servis.title} `}
+        description={`Çanakkale ${servis.title}`}
+        ogImage="/makale/1.jpg"
+        ogUrl="http://www.ebrukaraca.av.tr/uzmanlik"
+      />
       <div
         className="relative w-full h-[300px] bg-cover  bg-center"
         style={{ backgroundImage: `url('/makale/1.jpg')` }}
