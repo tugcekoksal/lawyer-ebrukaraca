@@ -28,56 +28,7 @@ export const articles = [
       },
     ],
   },
-  {
-    id: 2,
-    title: "Gaye Mahkemeleri: Hak Arayışında Bir Yol Haritası",
-    summary:
-      "Gayrimenkul, miras gibi konularda gaye mahkemelerinin işleyişi ve bu süreçlerde dikkat edilmesi gerekenler.",
-    imageUrl: "/makale/2.jpg",
 
-    content: [
-      {
-        section: "Gaye Mahkemelerinin Rolü",
-        details:
-          "Gaye mahkemeleri, özellikle gayrimenkul ve miras gibi mülkiyet konularında önemli bir role sahiptir. Bu mahkemeler, tapu iptali, tescil, kamulaştırma bedelinin tespiti ve miras davaları gibi çok çeşitli konuları ele alır.",
-      },
-      {
-        section: "Gayrimenkul Davalarında İşleyiş",
-        details:
-          "Gayrimenkul davalarında, mahkeme süreci genellikle tapu kayıtları, eksper raporları ve tanık ifadeleri gibi kanıtların incelenmesiyle başlar. Tarafların iddialarını desteklemek için sunacakları belgelerin resmi ve güncel olması gerekmektedir.",
-      },
-      {
-        section: "Miras Davalarında Süreç",
-        details:
-          "Miras davaları, vasiyetnamelerin yorumlanması, miras bırakanın niyetinin anlaşılması ve varisler arasındaki hakların adil bir şekilde taksim edilmesini içerir. Bu süreçte, yasal mirasçıların tespiti ve mirasın paylaşımı esas alınır.",
-      },
-      {
-        section: "Dikkat Edilmesi Gerekenler",
-        subsections: [
-          {
-            title: "Delil Sunma",
-            details:
-              "Gaye mahkemelerinde başarılı olabilmek için, iddialarınızı destekleyecek güçlü ve ikna edici deliller sunmalısınız.",
-          },
-          {
-            title: "Zamanında Hareket",
-            details:
-              "Davaların zaman aşımı süreleri vardır. Bu nedenle, hak kaybına uğramamak için zamanında harekete geçmek önemlidir.",
-          },
-          {
-            title: "Uzman Görüşü",
-            details:
-              "Karmaşık mülkiyet ve miras konularında hukuki danışmanlık almak, sürecin doğru yönetilmesine katkıda bulunur.",
-          },
-        ],
-      },
-      {
-        section: "Sonuç",
-        details:
-          "Gaye mahkemelerinde dava açmak veya bir dava ile karşı karşıya kalmak karmaşık ve zaman alıcı bir süreçtir. Ancak, doğru bilgi ve uygun stratejiyle, hak arayışınızda başarılı olabilirsiniz. Makalenin devamında bu süreçlerin her birini daha ayrıntılı inceleyeceğiz ve hak arayışınızda size rehberlik edecek bilgiler sunacağız.",
-      },
-    ],
-  },
   {
     id: 3,
     title:
