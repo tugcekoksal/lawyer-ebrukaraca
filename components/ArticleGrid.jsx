@@ -1,7 +1,7 @@
 import { articles } from "@/utils/articlesData";
 
 const ArticleCard = ({ title, summary, imageUrl, id }) => (
-  <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+  <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white mx-2">
     <img className="w-full h-48 object-cover" src={imageUrl} alt={title} />
     <div className="px-6 py-4">
       <div className="font-bold text-xl mb-2">{title}</div>
@@ -20,7 +20,7 @@ const ArticleCard = ({ title, summary, imageUrl, id }) => (
 
 const ArticlesGrid = () => {
   return (
-    <div className="container mx-0  md:mx-[7rem] py-8">
+    <div className="container   md:mx-[7rem] py-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {articles.map((article) => (
           <ArticleCard key={article.id} {...article} />
