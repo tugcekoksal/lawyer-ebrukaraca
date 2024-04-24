@@ -19,19 +19,20 @@ const UzmanlikKart = ({ src, name, id }) => {
       whileInView="visible"
       transition={{ duration: 1, delay: 0.25 }}
     >
-      {" "}
+
       <Image
         src={src}
         alt={name}
-        width={500}
-        height={500}
+        width={400}
+        height={400}
         objectFit="cover"
-        className={`w-full h-full transition-transform ${
-          hovered ? "duration-1000 transform scale-110" : "duration-1000"
+        className={`w-full  h-full transition-transform ease-in-out ${
+          hovered ? "duration-1000 transform scale-110 opacity-75 " : "duration-1000"
         }`}
       />
-      <div className="absolute inset-0 flex flex-col bg-black bg-opacity-30 items-center justify-center ">
-        <div className=" group-hover:bg-black group-hover:bg-opacity-50 w-full text-center">
+       
+      <div className="absolute bottom-0 right-0 left-0 flex flex-col bg-black bg-opacity-30 items-center justify-center ">
+        <div className="bg-black bg-opacity-30 group-hover:bg-black group-hover:bg-opacity-50 w-full text-center">
           {" "}
           <p className="text-xl font-bold   text-white px-10  py-4 ">
             <Translation textKey={name} />

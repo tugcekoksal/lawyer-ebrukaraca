@@ -69,4 +69,35 @@ export const articles = [
       },
     ],
   },
+  {
+    id: 4,
+    title:
+      "Türkiye'deki Mülteci Kanunları: Bir Bakış",
+    summary:
+      "Türkiye, stratejik konumuyla mülteciler için önemli bir sığınma noktasıdır. Avukat olarak, mülteci hakları ve yasal süreçler konusunda doğru bilgilendirme yaparak, hukuki sorunları azaltabiliriz.",
+    imageUrl: "/makale/2.jpg",
+    content: [
+      {
+        section: "Yasal Çerçeve: ",
+        details:
+          "Türkiye'deki mülteci kanunları, özellikle 6458 sayılı Yabancılar ve Uluslararası Koruma Kanunu temelinde şekillenmiştir. Bu kanun, mültecilere sağlanan korumaları ve mülteci statüsüne başvuru sürecini düzenler. Ayrıca, Türkiye'nin taraf olduğu Cenevre Sözleşmesi ve diğer uluslararası anlaşmalar, mültecilere yönelik yasal hak ve sorumlulukları belirleyen önemli belgeler arasındadır.",
+      },
+      {
+        section: "Statüye Başvuru Süreci: ",
+        details:
+          "Mülteci olarak tanınmak için Türkiye'de bir dizi adımın takip edilmesi gerekmektedir. Başvurunun İl Göç İdaresi Genel Müdürlüğü'ne yapılması, kişisel mülakatlar ve gereken belgelerin sunulması sürecin ayrılmaz parçalarıdır. Bu süreç, genellikle karmaşık ve uzun olabilir, dolayısıyla bir avukatın rehberliği, başvuru sürecinin doğru yönetilmesi için kritik öneme sahiptir.",
+      },
+      {
+        section: "Mültecilerin Hakları:  ",
+        details:
+          "Türkiye'deki mülteciler, çalışma izni, sağlık hizmetlerine erişim ve eğitim gibi temel insan haklarından yararlanma hakkına sahiptir. Bununla birlikte, bu hakların tam olarak kullanılabilmesi için mevzuata uygun hareket etmek ve gerekli prosedürleri bilmek gerekmektedir.",
+      },
+      {
+        section: "Karşılaşılan Hukuki Sorunlar: ",
+        details:
+          "Mülteciler sıklıkla çalışma izni alamama, yetersiz hukuki destek ve ayrımcılık gibi sorunlarla karşı karşıya kalabilirler. Bu tür durumlarla mücadele etmek için, avukatların aktif bir şekilde müdahil olması ve mültecilerin haklarını savunması gerekmektedir.",
+      },
+     
+    ],
+  },
 ];
